@@ -1,0 +1,70 @@
+@import "../../../styles/variables.scss";
+// Header CSS Start
+.headerSec {
+  background-color: $primary-color;
+  .header-top-bar-row {
+    display: flex;
+    align-items: center;
+  }
+  .nav-user-cart-col {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .icon-sec {
+      margin-right: 10px;
+    }
+  }
+  .hamburger-menu {
+    .navbar {
+      .navbar-light {
+        border: 0 !important;
+        padding: 0;
+      }
+    }
+    .navbar-toggler {
+      padding: 0;
+      border: 0;
+      box-shadow: none;
+      span.navbar-toggler-icon {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+  .navbar-sec {
+    &.navbar {
+      .navbar-nav {
+        justify-content: space-around;
+        width: 100%;
+        a {
+          color: $white-color;
+          text-decoration: none !important;
+          font-weight: 600;
+          font-size: 16px;
+          padding: 0px 10px;
+          background-color: transparent !important;
+          position: static;
+          .dropdown-menu {
+            background-color: #393d50;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px !important;
+            border-radius: 0;
+            a.dropdown-item {
+              width: 16.667%;
+              text-align: center;
+              padding: 10px 5px;
+              border-bottom: 1px solid #494c64;
+              border-left: 1px solid #494c64;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Header CSS End
+
+// Media Query Start
+
+// Media Query End

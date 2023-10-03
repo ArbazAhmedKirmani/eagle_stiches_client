@@ -1,0 +1,98 @@
+@import "../../../../styles/variables.scss";
+.product-card-sec {
+  margin-bottom: 60px;
+  &:nth-last-child(-n + 4) {
+    margin-bottom: 0px;
+  }
+  .product-card {
+    position: relative;
+    border: 1px solid $product-border-color;
+    transition: all ease-in-out 0.3s;
+
+    .procuct-content-sec {
+      transition: all ease-in-out 0.3s;
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+      min-height: 170px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .divider {
+        border-bottom: 1px solid $secondary-color;
+        width: 25%;
+        margin: 0 auto;
+        transition: all ease-in-out 0.3s;
+      }
+      .prod-title {
+        h5 {
+          a {
+            font-size: 16px;
+            color: $primary-heading-color;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: all ease-in-out 0.3s;
+            text-decoration: none;
+          }
+        }
+      }
+      .prod-price {
+        font-size: 16px;
+        color: $secondary-color;
+        transition: all ease-in-out 0.3s;
+      }
+      .prod-action {
+        display: inline-flex;
+        a {
+          width: 16px;
+          color: $icon-color;
+          &:first-child {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .product-card-image {
+      height: 250px;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .quick-view {
+        position: absolute;
+        bottom: 0;
+        background-color: $secondary-color-opacity;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        color: $white-color;
+        font-weight: 700;
+        letter-spacing: 1px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all ease-in-out 0.3s;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    &:hover {
+      background-color: $border-color;
+      .divider {
+        width: 35%;
+      }
+      .product-card-image {
+        .quick-view {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
