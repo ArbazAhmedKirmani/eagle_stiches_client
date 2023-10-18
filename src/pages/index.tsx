@@ -17,8 +17,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`main-content-sec`}>
-        <ShopByCategory />
-        <EmbroideryDesigns />
+        <ShopByCategory container={true} heading={true} />
+        <EmbroideryDesigns container={true} heading={true} />
       </main>
     </>
   );

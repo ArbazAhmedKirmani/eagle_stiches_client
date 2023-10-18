@@ -1,0 +1,14 @@
+.banner {
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333144;
+    flex-direction: column;
+    position: relative;
+}
+
+.banner h2 {
+    color: #fff;
+    font-size: 50px;
+}
