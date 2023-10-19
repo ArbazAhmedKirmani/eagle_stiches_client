@@ -1,0 +1,39 @@
+ol.breadcrumb {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin: 0;
+}
+
+ol.breadcrumb svg {
+    fill: #fff;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+li.breadcrumb-item a:hover {
+    color: #00bcd4;
+}
+
+li.breadcrumb-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+li.breadcrumb-item.active {
+    font-size: 16px;
+    color: #e7ff89;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #e7ff89;
+}
+
+ol.breadcrumb > li {
+    padding-bottom: 12px;
+}
+
+.banner nav {
+    position: absolute;
+    bottom: 0;
+}

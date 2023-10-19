@@ -1,0 +1,7 @@
+.priceslider > div {
+    display: flex;
+    flex-direction: column;
+}
+form.priceslider input.range-slider.range-slider--primary {
+    width: 100%;
+}
