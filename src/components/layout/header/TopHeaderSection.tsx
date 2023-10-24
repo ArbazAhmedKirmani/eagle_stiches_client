@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Row, Col } from "react-bootstrap";
 import { Logo } from "@/assets/images";
+import { logoNike } from "@/assets/images";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Container from "react-bootstrap/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -19,7 +20,7 @@ const TopHeaderSection = () => {
             <Image
               width={220}
               alt="Eagle Stitches Logo"
-              src={Logo}
+              src={logoNike}
               placeholder="blur"
               blurDataURL="data:..."
             />

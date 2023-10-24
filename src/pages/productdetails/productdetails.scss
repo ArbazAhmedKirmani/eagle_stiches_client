@@ -1,0 +1,41 @@
+.product-info h2 {
+    color: #3c3950;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 45px;
+}
+
+.product-info p.price {
+    font-size: 30px;
+    font-weight: 300;
+    color: #3c3950;
+}
+
+.product-info .variations h3 {
+    font-size: 22px;
+    color: #3c3950;
+}
+
+.product-info .variations li {
+    color: #3c3950;
+    font-size: 14px;
+}
+
+.product-info .variations {margin-bottom: 30px;}
+button.pdf-btn {
+    font-size: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #3c3950;
+    color: #fff;
+    width: 100%;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid #3c3950;
+}
+    button.pdf-btn:hover {
+    background: #fff;
+    color: #3c3950;
+}
