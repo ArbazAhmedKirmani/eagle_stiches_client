@@ -8,6 +8,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Row, Col } from "react-bootstrap";
 import { Logo, NoImage } from "@/assets/images";
+import { logoNike } from "@/assets/images";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
@@ -57,8 +58,8 @@ const HeaderSection = () => {
                       menu.dropDownMenu ? (
                         <NavDropdown
                           key={index}
-                          as={Link}
-                          href={menu?.linkTo}
+                          // as={Link}
+                          // href={menu?.linkTo}
                           title={menu.label}
                           id="navbarScrollingDropdown"
                           className={`nav-item ${

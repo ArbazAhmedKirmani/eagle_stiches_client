@@ -7,6 +7,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import { Logo } from "@/assets/images";
+import { logoNike } from "@/assets/images";
+
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -41,7 +43,7 @@ const FooterSection = () => {
               <Image
                 width={230}
                 alt="Logo"
-                src={Logo}
+                src={logoNike}
                 placeholder="blur"
                 blurDataURL="data:..."
               />

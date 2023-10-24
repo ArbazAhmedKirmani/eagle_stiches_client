@@ -9,7 +9,7 @@ const PriceSlider = () => {
     <>
       <Form className="priceslider mt-5">
         <Form.Group>
-          <Form.Label className="mb-3">Price123</Form.Label>
+          <Form.Label className="mb-3">Price</Form.Label>
           <RangeSlider
             value={value}
             min={0}
