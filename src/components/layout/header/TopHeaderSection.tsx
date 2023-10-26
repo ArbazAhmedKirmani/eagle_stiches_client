@@ -14,43 +14,43 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons/faCartShopping
 const TopHeaderSection = () => {
   return (
     <Container fluid>
-      <Row className="header-top-bar-row">
+      <Row className='header-top-bar-row'>
         <Col xl={4} lg={4} md={4} sm={10} xs={9}>
-          <div className="logo">
+          <div className='logo'>
             <Image
-              width={220}
-              alt="Eagle Stitches Logo"
+              style={{ height: "3.5rem", width: "auto", margin: "1rem" }}
+              alt='Eagle Stitches Logo'
               src={logoNike}
-              placeholder="blur"
-              blurDataURL="data:..."
+              placeholder='blur'
+              blurDataURL='data:...'
             />
           </div>
         </Col>
-        <Col xl={8} lg={8} md={8} sm={2} xs={3} className="navigation-col">
-          <div className="nav-user-cart-col">
-            <div className="user-sec icon-sec">
+        <Col xl={8} lg={8} md={8} sm={2} xs={3} className='navigation-col'>
+          <div className='nav-user-cart-col'>
+            <div className='user-sec icon-sec'>
               <Link href={"#"}>
-                <FontAwesomeIcon icon={faUser} color="#fff" width={18} />
+                <FontAwesomeIcon icon={faUser} color='#fff' width={18} />
               </Link>
             </div>
-            <div className="cart-sec icon-sec">
+            <div className='cart-sec icon-sec'>
               <Link href={"#"}>
                 <FontAwesomeIcon
                   icon={faCartShopping}
-                  color="#fff"
+                  color='#fff'
                   width={18}
                 />
               </Link>
             </div>
 
-            <Navbar expand={false} className="hamburger-menu">
+            <Navbar expand={false} className='hamburger-menu'>
               <Navbar.Toggle
                 aria-controls={`offcanvasNavbar-expand-${false}`}
               />
               <Navbar.Offcanvas
                 id={`offcanvasNavbar-expand-${false}`}
                 aria-labelledby={`offcanvasNavbarLabel-expand-${false}`}
-                placement="end"
+                placement='end'
               >
                 <Offcanvas.Header closeButton>
                   <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${false}`}>
@@ -59,9 +59,9 @@ const TopHeaderSection = () => {
                 </Offcanvas.Header>
 
                 <Offcanvas.Body>
-                  <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Nav.Link href="#action1">Home</Nav.Link>
-                    <Nav.Link href="#action2">Link</Nav.Link>
+                  <Nav className='justify-content-end flex-grow-1 pe-3'>
+                    <Nav.Link href='#action1'>Home</Nav.Link>
+                    <Nav.Link href='#action2'>Link</Nav.Link>
                   </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>

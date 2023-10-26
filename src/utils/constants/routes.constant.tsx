@@ -33,22 +33,22 @@ export const AllMenusItems: Array<AllMenuItemsProps> = [
     selectedOptionKey: HEADER_ROUTE.EMBROIDERY_DESIGNS,
     dropDownMenu: [
       {
-        label: "Dummy 1",
+        label: "Vector art 1",
         linkTo: "/dummy1",
         selectedOptionKey: "/dummy1",
       },
       {
-        label: "Dummy 2",
+        label: "Embroidery design",
         linkTo: "/dummy2",
         selectedOptionKey: "/dummy3",
       },
       {
-        label: "Dummy 3",
+        label: "Custom Vector Art",
         linkTo: "/dummy3",
         selectedOptionKey: "/dummy3",
       },
       {
-        label: "Dummy 4",
+        label: "Design Scenarios",
         linkTo: "/dummy4",
         selectedOptionKey: "/dummy4",
       },
