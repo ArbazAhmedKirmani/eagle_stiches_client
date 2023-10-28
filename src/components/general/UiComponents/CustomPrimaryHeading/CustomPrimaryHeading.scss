@@ -5,15 +5,16 @@
   margin: 40px 0px;
   display: block;
   .sec-heding {
-    color: $primary-heading-color;
+    color: $primary-color;
     font-size: 50px;
     text-align: center;
     display: table;
     margin: 0 auto;
+    font-weight: 600;
     &::before {
       content: "";
       display: block;
-      width: 25%;
+      width: 22%;
       height: 10px;
       border-top: 1px solid $border-color;
       border-bottom: 1px solid $border-color;
@@ -24,7 +25,7 @@
     &::after {
       content: "";
       display: block;
-      width: 25%;
+      width: 22%;
       height: 10px;
       border-top: 1px solid $border-color;
       border-bottom: 1px solid $border-color;

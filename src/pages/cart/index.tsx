@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import Banner from "@/components/Banner";
+import { productdetails } from "@/assets/images";
 import CategorySidebar from "@/components/CategorySidebar";
 import CategoryTopFilters from "@/components/CategoryTopFilters";
 import EmbroideryDesigns from "@/components/screens/home/EmbroideryDesigns";
 import ShopByCategory from "@/components/screens/home/ShopByCategory";
-import { Col, Container, Form, Image, Row } from "react-bootstrap";
+import { Col, Container, Form, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowLeftLong,
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Cart() {
   const [validated, setValidated] = useState<boolean>(false);
@@ -43,7 +46,7 @@ export default function Cart() {
                         <div className="d-flex align-items-start">
                           <div className="me-4">
                             <Image
-                              src="https://www.bootdey.com/image/380x380/FF8C00/000000"
+                              src={productdetails}
                               alt=""
                               className="avatar-lg rounded"
                             />
@@ -97,21 +100,18 @@ export default function Cart() {
               </div>
               <Row>
                 <Col md="6">
-                  <a
-                    href="ecommerce-products.html"
+                  <Link
+                    href="/categoryproducts"
                     className="btn btn-link text-muted"
                   >
                     <FontAwesomeIcon icon={faArrowLeftLong} /> Continue Shopping{" "}
-                  </a>
+                  </Link>
                 </Col>
                 <Col sm="6">
                   <div className="text-sm-end mt-2 mt-sm-0">
-                    <a
-                      href="ecommerce-checkout.html"
-                      className="btn btn-success"
-                    >
+                    <Link href="/checkout" className="btn btn-success">
                       <FontAwesomeIcon icon={faCartShopping} /> Checkout{" "}
-                    </a>
+                    </Link>
                   </div>
                 </Col>
               </Row>

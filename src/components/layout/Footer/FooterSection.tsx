@@ -43,7 +43,7 @@ const FooterSection = () => {
               <Image
                 width={230}
                 alt="Logo"
-                src={logoNike}
+                src={Logo}
                 placeholder="blur"
                 blurDataURL="data:..."
               />
@@ -109,13 +109,13 @@ const FooterSection = () => {
                 <Nav variant="pills" activeKey={route}>
                   <ul className="navbar-nav mr-auto">
                     <li className={`nav-item ${route === "#" && ""}`}>
-                      <Link href={"#"}>
+                      <Link href={"/categoryproducts"}>
                         <span>{"EMBROIDERY DESIGNS"}</span>
                       </Link>
                     </li>
 
                     <li className={`nav-item`}>
-                      <Link href={"#"}>
+                      <Link href={"/categoryproducts"}>
                         <span>{"VECTOR DESIGNS"}</span>
                       </Link>
                     </li>

@@ -1,5 +1,6 @@
 @import "../../src/assets/Poppins/poppins.css";
+@import "../../src/assets/Montserrat/stylesheet.css";
 
 * {
-  font-family: "Poppins";
+  font-family: "Montserrat";
 }

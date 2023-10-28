@@ -1,7 +1,8 @@
 @import "../../../styles/variables.scss";
 // Header CSS Start
 .headerSec {
-  background-color: $primary-color;
+  background-color: $header-footer-bg;
+  padding-top: 15px;
   .header-top-bar-row {
     display: flex;
     align-items: center;

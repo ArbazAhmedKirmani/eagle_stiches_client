@@ -7,24 +7,36 @@ import Link from "next/link";
 interface CategoryCardProps {
   data?: Array<CategoryDataProps>;
   customClassName?: string;
+  xlColProps?: number;
+  lgColProps?: number;
+  mdColProps?: number;
+  smColProps?: number;
+  xsColProps?: number;
 }
 
 const CategoryCard = (props: CategoryCardProps) => {
-  const { data }: CategoryCardProps = props;
+  const {
+    data,
+    xsColProps,
+    smColProps,
+    mdColProps,
+    lgColProps,
+    xlColProps,
+  }: CategoryCardProps = props;
 
   return (
     <>
       {data?.map((items, index) => (
         <Col
           key={index}
-          xl={3}
-          lg={3}
-          md={3}
-          sm={24}
-          xs={24}
+          xl={xlColProps ? xlColProps : 3}
+          lg={lgColProps ? lgColProps : 3}
+          md={mdColProps ? mdColProps : 3}
+          sm={smColProps ? smColProps : 24}
+          xs={xsColProps ? xsColProps : 24}
           className="category-card-sec"
         >
-          <Link href={"#"}>
+          <Link href={"/categories"}>
             <div
               key={items.id}
               className={`category-card ${

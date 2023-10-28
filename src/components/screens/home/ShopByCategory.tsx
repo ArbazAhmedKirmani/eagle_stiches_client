@@ -11,17 +11,22 @@ interface ShopByCategoryProps {
   heading: boolean; // New prop for heading
 }
 
-const ShopByCategory: React.FC<ShopByCategoryProps> = ({ container, heading }) => {
+const ShopByCategory: React.FC<ShopByCategoryProps> = ({
+  container,
+  heading,
+}) => {
   return (
     <div className={"cat-sec"}>
       <div className="cat-row">
         {container ? (
           <Container>
             {heading ? (
-            <CustomPrimaryHeading headingTag="h1" className="sec-heding">
-              SHOP BY CATEGORY
-            </CustomPrimaryHeading>
-            ) : ''}
+              <CustomPrimaryHeading headingTag="h1" className="sec-heding">
+                SHOP BY CATEGORY
+              </CustomPrimaryHeading>
+            ) : (
+              ""
+            )}
             <Row>
               <CategoryCard data={CategoryCardData} />
             </Row>
@@ -29,12 +34,19 @@ const ShopByCategory: React.FC<ShopByCategoryProps> = ({ container, heading }) =
         ) : (
           <>
             {heading ? (
-            <CustomPrimaryHeading headingTag="h1" className="sec-heding">
-              SHOP BY CATEGORY
-            </CustomPrimaryHeading>
-            ) : ''}
+              <CustomPrimaryHeading headingTag="h1" className="sec-heding">
+                SHOP BY CATEGORY
+              </CustomPrimaryHeading>
+            ) : (
+              ""
+            )}
             <Row>
-              <CategoryCard data={CategoryCardData} />
+              <CategoryCard
+                mdColProps={4}
+                lgColProps={4}
+                xlColProps={4}
+                data={CategoryCardData}
+              />
             </Row>
           </>
         )}
