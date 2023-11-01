@@ -1,7 +1,10 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { productdetails } from "@/assets/images";
+import { useRouter } from "next/navigation";
 
 export default function ProductDetails() {
+  const router = useRouter();
+
   return (
     <>
       <Container className="mt-5">
@@ -57,7 +60,11 @@ export default function ProductDetails() {
                   <li>Color(s) Used: 6 | Color(s) Changes: 6</li>
                 </ul>
               </div>
-              <button className="pdf-btn">Sewing Information (PDF)</button>
+              {/* <button className="pdf-btn">Sewing Information (PDF)</button> */}
+              {/* <button  className="pdf-btn">Sewing Information (PDF)</button> */}
+              <button onClick={() => router.push("/cart")} className="pdf-btn">
+                Add to cart
+              </button>
             </div>
           </Col>
         </Row>

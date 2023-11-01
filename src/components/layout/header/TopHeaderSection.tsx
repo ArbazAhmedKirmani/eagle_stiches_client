@@ -17,13 +17,15 @@ const TopHeaderSection = () => {
       <Row className="header-top-bar-row">
         <Col xl={4} lg={4} md={4} sm={10} xs={9}>
           <div className="logo">
-            <Image
-              width={220}
-              alt="Eagle Stitches Logo"
-              src={logoNike}
-              placeholder="blur"
-              blurDataURL="data:..."
-            />
+            <Link href={"/"}>
+              <Image
+                width={150}
+                alt="Eagle Stitches Logo"
+                src={Logo}
+                placeholder="blur"
+                blurDataURL="data:..."
+              />
+            </Link>
           </div>
         </Col>
         <Col xl={8} lg={8} md={8} sm={2} xs={3} className="navigation-col">
