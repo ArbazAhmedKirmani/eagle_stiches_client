@@ -67,7 +67,10 @@ const HeaderSection = () => {
                           }`}
                         >
                           {menu.dropDownMenu.map((menuItem, index) => (
-                            <NavDropdown.Item href={menuItem.linkTo}>
+                            <NavDropdown.Item
+                              href={menuItem.linkTo}
+                              key={index}
+                            >
                               {menuItem.label}
                             </NavDropdown.Item>
                           ))}
